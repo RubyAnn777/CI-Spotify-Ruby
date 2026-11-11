@@ -59,12 +59,12 @@ jobs:
     # TODO: Replace the run block to use our preferred linter
     - name: Lint with ruff
       run: |
-        uvx ruff check --fix
+        uvx ruff check 
 
     # TODO: Add steps to run formatting steps and type checking
     - name : Format with ruff
       run: |
-        uvx ruff format
+        uvx ruff format --check
 
     - name : Sort imports 
       run : |
